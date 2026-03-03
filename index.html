@@ -247,38 +247,41 @@
     </div>
 
     <div class="sample-container">
-        <h3>Dialog Example 4</h3>
-        <div class="prompts">
-            <div class="prompt-item">
-                <strong>Voice Prompt [Speaker 1]</strong><br>
-                <audio controls src="audio/covomix2/prompt4_1.wav"></audio>
+            <h3>Dialogue Example 4 <span style="font-size: 0.7em; color: #7f8c8d; font-weight: normal;">(Extreme Long-form Stress Test)</span></h3>
+            <p style="font-size: 0.9em; color: #555; margin-bottom: 15px;">
+                <em>* Note: This is a custom long-form transcript designed to evaluate extreme memory constraints. Therefore, an official CoVoMix2 ground truth sample is not available.</em>
+            </p>
+            <div class="prompts">
+                <div class="prompt-item">
+                    <strong>Voice Prompt [Speaker 1]</strong><br>
+                    <audio controls src="audio/covomix2/prompt4_1.wav"></audio>
+                </div>
+                <div class="prompt-item">
+                    <strong>Voice Prompt [Speaker 2]</strong><br>
+                    <audio controls src="audio/covomix2/prompt4_2.wav"></audio>
+                </div>
             </div>
-            <div class="prompt-item">
-                <strong>Voice Prompt [Speaker 2]</strong><br>
-                <audio controls src="audio/covomix2/prompt4_2.wav"></audio>
-            </div>
-        </div>
-        <div class="transcript">
-<strong>Target Dialog to Synthesize:</strong>
-[S1] Excuse me. I have an appointment with Mr. Li at nine. May I come in?
-[S2] Yes, come in please. I am Mr. Li. You must be My Liu, right?
-[S1] Yes, I am My Liu. Thanks.
-[S2] I'd like to start this interview with some questions. Why do you think you are qualified for this position?
-[S1] According to your advertisement, you want an experienced software engineer. I think my background meets the requirement of this position.
-[S2] Then tell me something about your background.
-[S1] My major was computer science when I was at college, and I am quite familiar with Visual C + + and Java language.
-[S2] Well, what do you think about the development in computers?
-[S1] The developments in software are going ahead very quickly and more and more problems are resolved by software. In some regions, the hardware is completely replaced by software. So I think the software industry has a great future.
-[S2] Have you ever designed any programs concerning network?
-[S1] Yes, I have designed some programs for the network with Visual C + + and I have passed the test for programmers - MUSE.
-[S2] Have you got anything to ask me?
-[S1] Yes, can you tell me what's my responsibility in this position?
-[S2] Yes, of course. You would be responsible for the development of software products.
-[S1] I see. This is my advantage.
-[S2] Good. Have you got any other questions?
-[S1] No.
-[S2] Ok, I will contact you in a week. See you.
-[S1] Thank you, bye-bye.
+            <div class="transcript">
+    <strong>Target Dialogue to Synthesize:</strong>
+    [S1] Excuse me. I have an appointment with Mr. Li at nine. May I come in?
+    [S2] Yes, come in please. I am Mr. Li. You must be My Liu, right?
+    [S1] Yes, I am My Liu. Thanks.
+    [S2] I'd like to start this interview with some questions. Why do you think you are qualified for this position?
+    [S1] According to your advertisement, you want an experienced software engineer. I think my background meets the requirement of this position.
+    [S2] Then tell me something about your background.
+    [S1] My major was computer science when I was at college, and I am quite familiar with Visual C + + and Java language.
+    [S2] Well, what do you think about the development in computers?
+    [S1] The developments in software are going ahead very quickly and more and more problems are resolved by software. In some regions, the hardware is completely replaced by software. So I think the software industry has a great future.
+    [S2] Have you ever designed any programs concerning network?
+    [S1] Yes, I have designed some programs for the network with Visual C + + and I have passed the test for programmers - MUSE.
+    [S2] Have you got anything to ask me?
+    [S1] Yes, can you tell me what's my responsibility in this position?
+    [S2] Yes, of course. You would be responsible for the development of software products.
+    [S1] I see. This is my advantage.
+    [S2] Good. Have you got any other questions?
+    [S1] No.
+    [S2] Ok, I will contact you in a week. See you.
+    [S1] Thank you, bye-bye.
         </div>
         <table>
             <thead>
@@ -292,6 +295,15 @@
             </thead>
             <tbody>
                 <tr>
+                    <th>Ground Truth <span class="model-desc">Original CoVoMix2</span></th>
+                    <td style="color: #95a5a6; font-style: italic; text-align: center; font-size: 0.9em;">
+                        N/A (Custom Text)
+                    </td>
+                    <td class="metric-col na-score">-</td>
+                    <td class="metric-col na-score">-</td>
+                    <td class="metric-col na-score">-</td>
+                </tr>
+                <tr>
                     <th>VibeVoice 1.5B</th>
                     <td><audio controls src="audio/covomix2/vibevoice_covomix2_04.wav"></audio></td>
                     <td class="metric-col">5658.54</td>
@@ -299,9 +311,9 @@
                     <td class="metric-col">1.48</td>
                 </tr>
                 <tr>
-                    <th>ZipVoice-Dialog</th>
+                    <th>ZipVoice-Dialog <span class="model-desc">Standard NAR (OOM Risk)</span></th>
                     <td><audio controls src="audio/covomix2/zipvoice_dialog_covomix_04.wav"></audio></td>
-                    <td class="metric-col">15291.17</td>
+                    <td class="metric-col highlight" style="color: #c0392b;">15291.17</td>
                     <td class="metric-col">8.05</td>
                     <td class="metric-col">0.09</td>
                 </tr>
