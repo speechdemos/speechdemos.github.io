@@ -1,0 +1,12 @@
+[S1] Why’d you pull me over? 
+[S2] Are you aware that you drove through a red light? 
+[S1] I ran a red light? 
+[S2] Yes, you did. 
+[S1] I apologize, but I didn’t realize that I did. 
+[S2] Weren’t you taught that yellow means slow down, not speed up? 
+[S1] I did learn that. 
+[S2] So, then why did you speed up? 
+[S1] I don’t know what to tell you. 
+[S2] I’m going to have to write you a ticket. 
+[S1] I understand. 
+[S2] Here you go. Don’t do that again.

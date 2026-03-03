@@ -1,0 +1,5 @@
+[S1] Sun-set hotel. May I help you?
+[S2] Yes, I have booked a room for 24th. It’s a double room.
+[S1] Hold on, please. Let me check it for you. Yes, you’re right. You will keep it for 3 days.
+[S2] Well, now I want to change the date from 24th to 28th.
+[S1] OK, that shall be arranged.
