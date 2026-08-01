@@ -34,7 +34,7 @@
 <body>
 
     <h1>ZipL-Dialog: Memory-Efficient Long-Form Spoken Dialog Synthesis via Latent Flow Matching</h1>
-    <p><em>* Anonymous submission to Interspeech 2026</em></p>
+    <p><em>Jihwan Kim, Nam Soo Kim</em></p>
 
     <div class="abstract">
         <strong>Abstract:</strong> Zero-shot dialog TTS benefits from flow-matching, but minute-scale generation on dense mel-spectrograms causes severe memory bottlenecks, often forcing unnatural chunked synthesis. We propose ZipL-Dialog, which shifts conditional flow-matching into a 4x time-compressed (25 Hz) latent space. To preserve acoustic fidelity under compression, we employ a deterministic mel autoencoder with auxiliary mel-domain supervision and optimize the ZipFormer's hierarchical downsampling schedule. Evaluations demonstrate that ZipL-Dialog reduces maximum peak GPU memory by 11.22x and accelerates inference by 2.23x over the baseline. This enables seamless, single-pass multi-minute dialog synthesis on commodity GPUs while maintaining perceptual naturalness.
